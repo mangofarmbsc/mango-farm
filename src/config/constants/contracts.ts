@@ -1,10 +1,10 @@
 export default {
   mango: {
-    56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+    56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
     97: '',
   },
   masterChef: {
-    56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
+    56: '0xB8c0B207a2eC0FB7011FAF2F5d7Fb98D2222fF98',
     97: '',
   },
   wbnb: {
@@ -20,8 +20,8 @@ export default {
     97: '',
   },
   mulltiCall: {
-    56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
-    97: '0x67ADCB4dF3931b0C5Da724058ADC2174a9844412',
+    56: '0x52E54D127cA6474aB1C700335C4714f2515b4f3D',
+    97: '',
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
