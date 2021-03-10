@@ -60,8 +60,8 @@ export const usePools = (account): Pool[] => {
   return pools
 }
 
-export const usePoolFromPid = (juiceId): Pool => {
-  const pool = useSelector((state: State) => state.pools.data.find((p) => p.juiceId === juiceId))
+export const usePoolFromPid = (mangoId): Pool => {
+  const pool = useSelector((state: State) => state.pools.data.find((p) => p.mangoId === mangoId))
   return pool
 }
 

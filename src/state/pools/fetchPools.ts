@@ -1,5 +1,5 @@
 import poolsConfig from 'config/constants/pools'
-import juiceChefABI from 'config/abi/juiceChef.json'
+import mangoChefABI from 'config/abi/mangoChef.json'
 import mangoABI from 'config/abi/mango.json'
 import wbnbABI from 'config/abi/weth.json'
 import { QuoteToken } from 'config/constants/types'
@@ -10,7 +10,7 @@ import BigNumber from 'bignumber.js'
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 export const fetchPoolsBlockLimits = async () => {
-  const poolsWithEnd = poolsConfig.filter((p) => p.juiceId !== 0)
+  const poolsWithEnd = poolsConfig.filter((p) => p.mangoId !== 0)
   const callsStartBlock = poolsWithEnd.map((poolConfig) => {
     return {
       address: poolConfig.contractAddress[CHAIN_ID],
@@ -24,14 +24,14 @@ export const fetchPoolsBlockLimits = async () => {
     }
   })
 
-  const starts = await multicall(juiceChefABI, callsStartBlock)
-  const ends = await multicall(juiceChefABI, callsEndBlock)
+  const starts = await multicall(mangoChefABI, callsStartBlock)
+  const ends = await multicall(mangoChefABI, callsEndBlock)
 
   return poolsWithEnd.map((mangoPoolConfig, index) => {
     const startBlock = starts[index]
     const endBlock = ends[index]
     return {
-      juiceId: mangoPoolConfig.juiceId,
+      mangoId: mangoPoolConfig.mangoId,
       startBlock: new BigNumber(startBlock).toJSON(),
       endBlock: new BigNumber(endBlock).toJSON(),
     }
@@ -63,11 +63,11 @@ export const fetchPoolsTotalStatking = async () => {
 
   return [
     ...nonBnbPools.map((p, index) => ({
-      juiceId: p.juiceId,
+      mangoId: p.mangoId,
       totalStaked: new BigNumber(nonBnbPoolsTotalStaked[index]).toJSON(),
     })),
     ...bnbPool.map((p, index) => ({
-      juiceId: p.juiceId,
+      mangoId: p.mangoId,
       totalStaked: new BigNumber(bnbPoolsTotalStaked[index]).toJSON(),
     })),
   ]

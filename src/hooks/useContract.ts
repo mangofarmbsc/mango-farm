@@ -12,8 +12,8 @@ import mangoRabbits from 'config/abi/mangoRabbits.json'
 import lottery from 'config/abi/lottery.json'
 import lotteryTicket from 'config/abi/lotteryNft.json'
 import masterChef from 'config/abi/masterchef.json'
-import juiceChef from 'config/abi/juiceChef.json'
-import juiceChefBnb from 'config/abi/juiceChefBnb.json'
+import mangoChef from 'config/abi/mangoChef.json'
+import mangoChefBnb from 'config/abi/mangoChefBnb.json'
 
 const useContract = (abi: AbiItem, address: string, contractOptions?: ContractOptions) => {
   const web3 = useWeb3()
@@ -70,8 +70,8 @@ export const useMasterchef = () => {
 }
 
 export const useMangoChef = (id) => {
-  const config = poolsConfig.find((pool) => pool.juiceId === id)
-  const rawAbi = config.poolCategory === PoolCategory.BINANCE ? juiceChefBnb : juiceChef
+  const config = poolsConfig.find((pool) => pool.mangoId === id)
+  const rawAbi = config.poolCategory === PoolCategory.BINANCE ? mangoChefBnb : mangoChef
   const abi = (rawAbi as unknown) as AbiItem
   return useContract(abi, config.contractAddress[process.env.REACT_APP_CHAIN_ID])
 }

@@ -26,15 +26,15 @@ const MangoStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getMangoAddress())
-  const farms = useFarms();
-  const juicePrice = usePriceMangoBusd();
-  const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-  const mangoSupply = getBalanceNumber(circSupply);
-  const marketCap = juicePrice.times(circSupply);
+  const farms = useFarms()
+  const mangoPrice = usePriceMangoBusd()
+  const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
+  const mangoSupply = getBalanceNumber(circSupply)
+  const marketCap = mangoPrice.times(circSupply)
 
-  let juicePerBlock = 0;
-  if(farms && farms[0] && farms[0].juicePerBlock){
-    juicePerBlock = new BigNumber(farms[0].juicePerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let mangoPerBlock = 0
+  if (farms && farms[0] && farms[0].mangoPerBlock) {
+    mangoPerBlock = new BigNumber(farms[0].mangoPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
@@ -61,7 +61,9 @@ const MangoStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New MANGO/block')}</Text>
-          <Text bold fontSize="14px">{juicePerBlock}</Text>
+          <Text bold fontSize="14px">
+            {mangoPerBlock}
+          </Text>
         </Row>
       </CardBody>
     </StyledMangoStats>

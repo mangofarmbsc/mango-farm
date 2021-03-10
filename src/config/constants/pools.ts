@@ -2,7 +2,7 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
   // {
-  //   juiceId: 0,
+  //   mangoId: 0,
   //   tokenName: 'MANGO',
   //   stakingTokenName: QuoteToken.MANGO,
   //   stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
@@ -19,7 +19,7 @@ const pools: PoolConfig[] = [
   //   tokenDecimals: 18,
   // },
   // {
-  //   juiceId: 1,
+  //   mangoId: 1,
   //   tokenName: 'TWT',
   //   stakingTokenName: QuoteToken.SYRUP,
   //   stakingTokenAddress: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',

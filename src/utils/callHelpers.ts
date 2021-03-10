@@ -16,8 +16,8 @@ export const stake = async (masterChefContract, pid, amount, account) => {
     })
 }
 
-export const juiceStake = async (juiceChefContract, amount, account) => {
-  return juiceChefContract.methods
+export const mangoStake = async (mangoChefContract, amount, account) => {
+  return mangoChefContract.methods
     .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
     .send({ from: account })
     .on('transactionHash', (tx) => {
@@ -25,8 +25,8 @@ export const juiceStake = async (juiceChefContract, amount, account) => {
     })
 }
 
-export const juiceStakeBnb = async (juiceChefContract, amount, account) => {
-  return juiceChefContract.methods
+export const mangoStakeBnb = async (mangoChefContract, amount, account) => {
+  return mangoChefContract.methods
     .deposit()
     .send({ from: account, value: new BigNumber(amount).times(new BigNumber(10).pow(18)).toString() })
     .on('transactionHash', (tx) => {
@@ -43,25 +43,25 @@ export const unstake = async (masterChefContract, pid, amount, account) => {
     })
 }
 
-export const juiceUnstake = async (juiceChefContract, amount, account) => {
+export const mangoUnstake = async (mangoChefContract, amount, account) => {
   // shit code: hard fix for old CTK and BLK
-  if (juiceChefContract.options.address === '0x3B9B74f48E89Ebd8b45a53444327013a2308A9BC') {
-    return juiceChefContract.methods
+  if (mangoChefContract.options.address === '0x3B9B74f48E89Ebd8b45a53444327013a2308A9BC') {
+    return mangoChefContract.methods
       .emergencyWithdraw()
       .send({ from: account })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
       })
   }
-  if (juiceChefContract.options.address === '0xBb2B66a2c7C2fFFB06EA60BeaD69741b3f5BF831') {
-    return juiceChefContract.methods
+  if (mangoChefContract.options.address === '0xBb2B66a2c7C2fFFB06EA60BeaD69741b3f5BF831') {
+    return mangoChefContract.methods
       .emergencyWithdraw()
       .send({ from: account })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
       })
   }
-  return juiceChefContract.methods
+  return mangoChefContract.methods
     .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
     .send({ from: account })
     .on('transactionHash', (tx) => {
@@ -69,8 +69,8 @@ export const juiceUnstake = async (juiceChefContract, amount, account) => {
     })
 }
 
-export const juiceEmegencyUnstake = async (juiceChefContract, amount, account) => {
-  return juiceChefContract.methods
+export const mangoEmegencyUnstake = async (mangoChefContract, amount, account) => {
+  return mangoChefContract.methods
     .emergencyWithdraw()
     .send({ from: account })
     .on('transactionHash', (tx) => {
@@ -87,8 +87,8 @@ export const harvest = async (masterChefContract, pid, account) => {
     })
 }
 
-export const juicehHarvest = async (juiceChefContract, account) => {
-  return juiceChefContract.methods
+export const mangohHarvest = async (mangoChefContract, account) => {
+  return mangoChefContract.methods
     .deposit('0')
     .send({ from: account })
     .on('transactionHash', (tx) => {
@@ -96,8 +96,8 @@ export const juicehHarvest = async (juiceChefContract, account) => {
     })
 }
 
-export const juicehHarvestBnb = async (juiceChefContract, account) => {
-  return juiceChefContract.methods
+export const mangohHarvestBnb = async (mangoChefContract, account) => {
+  return mangoChefContract.methods
     .deposit()
     .send({ from: account, value: new BigNumber(0) })
     .on('transactionHash', (tx) => {

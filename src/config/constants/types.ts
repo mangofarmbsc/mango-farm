@@ -59,7 +59,7 @@ export interface FarmConfig {
 }
 
 export interface PoolConfig {
-  juiceId: number
+  mangoId: number
   image?: string
   tokenName: string
   stakingTokenName: QuoteToken

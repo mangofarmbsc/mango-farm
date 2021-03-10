@@ -28,7 +28,7 @@ const config: MenuEntry[] = [
   {
     label: 'Mango',
     icon: 'PoolIcon',
-    href: '/juice',
+    href: '/mango',
   },
   // {
   //   label: 'Pools',

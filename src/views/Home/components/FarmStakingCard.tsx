@@ -45,7 +45,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
   const mangoBalance = getBalanceNumber(useTokenBalance(getMangoAddress()))
-  const juicePrice = usePriceMangoBusd().toNumber()
+  const mangoPrice = usePriceMangoBusd().toNumber()
   const allEarnings = useAllEarnings()
   const earningsSum = allEarnings.reduce((accum, earning) => {
     return accum + new BigNumber(earning).div(new BigNumber(10).pow(18)).toNumber()
@@ -74,13 +74,13 @@ const FarmedStakingCard = () => {
         <CardImage src="/images/mango.svg" alt="mango logo" width={64} height={64} />
         <Block>
           <Label>{TranslateString(544, 'MANGO to Harvest')}</Label>
-          <MangoHarvestBalance earningsSum={earningsSum}/>
-          <Label>~${(juicePrice * earningsSum).toFixed(2)}</Label>
+          <MangoHarvestBalance earningsSum={earningsSum} />
+          <Label>~${(mangoPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
           <Label>{TranslateString(546, 'MANGO in Wallet')}</Label>
           <MangoWalletBalance mangoBalance={mangoBalance} />
-          <Label>~${(juicePrice * mangoBalance).toFixed(2)}</Label>
+          <Label>~${(mangoPrice * mangoBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (

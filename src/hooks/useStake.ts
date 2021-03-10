@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { useDispatch } from 'react-redux'
 import { fetchFarmUserDataAsync, updateUserStakedBalance, updateUserBalance } from 'state/actions'
-import { stake, juiceStake, juiceStakeBnb } from 'utils/callHelpers'
+import { stake, mangoStake, mangoStakeBnb } from 'utils/callHelpers'
 import { useMasterchef, useMangoChef } from './useContract'
 
 const useStake = (pid: number) => {
@@ -22,25 +22,25 @@ const useStake = (pid: number) => {
   return { onStake: handleStake }
 }
 
-export const useMangoStake = (juiceId, isUsingBnb = false) => {
+export const useMangoStake = (mangoId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
-  const juiceChefContract = useMangoChef(juiceId)
+  const mangoChefContract = useMangoChef(mangoId)
 
   const handleStake = useCallback(
     async (amount: string) => {
-      if (juiceId === 0) {
+      if (mangoId === 0) {
         await stake(masterChefContract, 0, amount, account)
       } else if (isUsingBnb) {
-        await juiceStakeBnb(juiceChefContract, amount, account)
+        await mangoStakeBnb(mangoChefContract, amount, account)
       } else {
-        await juiceStake(juiceChefContract, amount, account)
+        await mangoStake(mangoChefContract, amount, account)
       }
-      dispatch(updateUserStakedBalance(juiceId, account))
-      dispatch(updateUserBalance(juiceId, account))
+      dispatch(updateUserStakedBalance(mangoId, account))
+      dispatch(updateUserBalance(mangoId, account))
     },
-    [account, dispatch, isUsingBnb, masterChefContract, juiceChefContract, juiceId],
+    [account, dispatch, isUsingBnb, masterChefContract, mangoChefContract, mangoId],
   )
 
   return { onStake: handleStake }
