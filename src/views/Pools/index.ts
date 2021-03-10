@@ -1,1 +1,1 @@
-export { default } from './Juice'
+export { default } from './Mango'

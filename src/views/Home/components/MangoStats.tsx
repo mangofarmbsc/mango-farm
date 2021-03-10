@@ -41,7 +41,7 @@ const MangoStats = () => {
     <StyledMangoStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Juice Stats')}
+          {TranslateString(534, 'Mango Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(10005, 'Market Cap')}</Text>
@@ -60,7 +60,7 @@ const MangoStats = () => {
           {mangoSupply && <CardValue fontSize="14px" value={mangoSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New JUICE/block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'New MANGO/block')}</Text>
           <Text bold fontSize="14px">{juicePerBlock}</Text>
         </Row>
       </CardBody>

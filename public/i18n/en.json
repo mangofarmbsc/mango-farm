@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "Total JUICE burned since launch"
+        "text": "Total MANGO burned since launch"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn JUICE"
+        "text": "Stake LP tokens to earn MANGO"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "Stake Juice, get SYRUP."
+        "text": "Stake Mango, get SYRUP."
       }
     },
     {
@@ -153,13 +153,13 @@
     {
       "data": {
         "stringId": 334,
-        "text": "Every time you stake and unstake JUICE tokens, the contract will automatically harvest JUICE rewards for you!"
+        "text": "Every time you stake and unstake MANGO tokens, the contract will automatically harvest MANGO rewards for you!"
       }
     },
     {
       "data": {
         "stringId": 338,
-        "text": "The Juice Chef is cooking up a treat for all SYRUP holders"
+        "text": "The Mango Chef is cooking up a treat for all SYRUP holders"
       }
     },
     {
@@ -219,7 +219,7 @@
     {
       "data": {
         "stringId": 358,
-        "text": "Juice price"
+        "text": "Mango price"
       }
     },
     {
@@ -237,13 +237,13 @@
     {
       "data": {
         "stringId": 364,
-        "text": "Total Juice Staked"
+        "text": "Total Mango Staked"
       }
     },
     {
       "data": {
         "stringId": 380,
-        "text": "1 JUICE = 1 SYRUP"
+        "text": "1 MANGO = 1 SYRUP"
       }
     },
     {
@@ -291,7 +291,7 @@
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP holders proportionally split 25% of JUICE block emissions each day (10 JUICE per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 25% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
       }
     },
     {
@@ -351,13 +351,13 @@
     {
       "data": {
         "stringId": 424,
-        "text": "%num% JUICE"
+        "text": "%num% MANGO"
       }
     },
     {
       "data": {
         "stringId": 426,
-        "text": "Spend JUICE to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
+        "text": "Spend MANGO to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
       }
     },
     {
@@ -435,19 +435,19 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% JUICE Available"
+        "text": "%num% MANGO Available"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "Your amount must be a multiple of 10 JUICE"
+        "text": "Your amount must be a multiple of 10 MANGO"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 Ticket = 10 JUICE"
+        "text": "1 Ticket = 10 MANGO"
       }
     },
     {
@@ -495,7 +495,7 @@
     {
       "data": {
         "stringId": 478,
-        "text": "Ticket purchases are final. Your JUICE cannot be returned to you after buying tickets."
+        "text": "Ticket purchases are final. Your MANGO cannot be returned to you after buying tickets."
       }
     },
     {
@@ -507,7 +507,7 @@
     {
       "data": {
         "stringId": 482,
-        "text": "JUICE prizes to be claimed"
+        "text": "MANGO prizes to be claimed"
       }
     },
     {
@@ -543,13 +543,13 @@
     {
       "data": {
         "stringId": 494,
-        "text": "Approve JUICE"
+        "text": "Approve MANGO"
       }
     },
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP holders proportionally split 40% of JUICE block emissions each day (10 JUICE per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 40% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
       }
     },
     {
@@ -567,19 +567,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using JUICE-BNB LP tokens, which means you need to stake equal amounts of JUICE and BNB in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using MANGO-BNB LP tokens, which means you need to stake equal amounts of MANGO and BNB in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get JUICE-BNB LP >"
+        "text": "Get MANGO-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the BNB, Mango Finance burns the JUICE."
+        "text": "The project gets the BNB, Mango Finance burns the MANGO."
       }
     },
     {
@@ -645,7 +645,7 @@
     {
       "data": {
         "stringId": 534,
-        "text": "Juice Stats"
+        "text": "Mango Stats"
       }
     },
     {
@@ -663,7 +663,7 @@
     {
       "data": {
         "stringId": 540,
-        "text": "New JUICE\/block"
+        "text": "New MANGO\/block"
       }
     },
     {
@@ -675,19 +675,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "JUICE to Harvest"
+        "text": "MANGO to Harvest"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "JUICE in Wallet"
+        "text": "MANGO in Wallet"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "Collecting JUICE"
+        "text": "Collecting MANGO"
       }
     },
     {
@@ -699,7 +699,7 @@
     {
       "data": {
         "stringId": 552,
-        "text": "JUICE to Collect"
+        "text": "MANGO to Collect"
       }
     },
     {
@@ -765,7 +765,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "Stake JUICE to earn new tokens."
+        "text": "Stake MANGO to earn new tokens."
       }
     },
     {
@@ -783,7 +783,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "JUICE to burn (USD)"
+        "text": "MANGO to burn (USD)"
       }
     },
     {
@@ -795,7 +795,7 @@
     {
       "data": {
         "stringId": 590,
-        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest JUICE rewards for you!"
+        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest MANGO rewards for you!"
       }
     },
     {
@@ -813,13 +813,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy JUICE and BNB tokens"
+        "text": "Buy MANGO and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get JUICE-BNB LP tokens by adding JUICE and BNB liquidity"
+        "text": "Get MANGO-BNB LP tokens by adding MANGO and BNB liquidity"
       }
     },
     {
@@ -831,7 +831,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "While the sale is live, commit your JUICE-LP tokens to buy the IFO tokens"
+        "text": "While the sale is live, commit your MANGO-LP tokens to buy the IFO tokens"
       }
     },
     {
@@ -867,7 +867,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "Trade in for JUICE, or keep for your collection!"
+        "text": "Trade in for MANGO, or keep for your collection!"
       }
     },
     {
@@ -909,7 +909,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "When you trade in this NFT to receive JUICE, you will lose access to it forever!"
+        "text": "When you trade in this NFT to receive MANGO, you will lose access to it forever!"
       }
     },
     {
@@ -939,7 +939,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "Winners can trade in their NFTs for a JUICE value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
+        "text": "Winners can trade in their NFTs for a MANGO value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
       }
     },
     {
@@ -981,7 +981,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "Trade in for JUICE"
+        "text": "Trade in for MANGO"
       }
     },
     {
@@ -1107,7 +1107,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "Stake LP tokens to earn JUICE"
+        "text": "Stake LP tokens to earn MANGO"
       }
     },
     {
@@ -1149,13 +1149,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "The JUICE Lottery"
+        "text": "The MANGO Lottery"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "Buy tickets with JUICE"
+        "text": "Buy tickets with MANGO"
       }
     },
     {
@@ -1209,7 +1209,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": "Deposit Fee will be used to buyback JUICE"
+        "text": "Deposit Fee will be used to buyback MANGO"
       }
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Stake tokens to earn JUICE"
+        "text": "Stake tokens to earn MANGO"
       }
     },
     {

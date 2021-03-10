@@ -3,7 +3,7 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { useDispatch } from 'react-redux'
 import { fetchFarmUserDataAsync, updateUserBalance, updateUserPendingReward } from 'state/actions'
 import { juicehHarvest, juicehHarvestBnb, harvest } from 'utils/callHelpers'
-import { useMasterchef, useJuiceChef } from './useContract'
+import { useMasterchef, useMangoChef } from './useContract'
 
 export const useHarvest = (farmPid: number) => {
   const dispatch = useDispatch()
@@ -34,10 +34,10 @@ export const useAllHarvest = (farmPids: number[]) => {
   return { onReward: handleHarvest }
 }
 
-export const useJuiceHarvest = (juiceId, isUsingBnb = false) => {
+export const useMangoHarvest = (juiceId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
-  const juiceChefContract = useJuiceChef(juiceId)
+  const juiceChefContract = useMangoChef(juiceId)
   const masterChefContract = useMasterchef()
 
   const handleHarvest = useCallback(async () => {

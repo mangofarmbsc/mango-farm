@@ -93,7 +93,7 @@ export const fetchUserPendingRewards = async (account) => {
   )
 
   // Mango / Mango pool
-  const pendingReward = await masterChefContract.methods.pendingJuice('0', account).call()
+  const pendingReward = await masterChefContract.methods.pendingMango('0', account).call()
 
   return { ...pendingRewards, 0: new BigNumber(pendingReward).toJSON() }
 }

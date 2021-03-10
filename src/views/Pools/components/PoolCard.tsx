@@ -6,13 +6,13 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import UnlockButton from 'components/UnlockButton'
 import Label from 'components/Label'
 import { useERC20 } from 'hooks/useContract'
-import { useJuiceApprove } from 'hooks/useApprove'
+import { useMangoApprove } from 'hooks/useApprove'
 import useI18n from 'hooks/useI18n'
-import { useJuiceStake } from 'hooks/useStake'
-import { useJuiceUnstake } from 'hooks/useUnstake'
+import { useMangoStake } from 'hooks/useStake'
+import { useMangoUnstake } from 'hooks/useUnstake'
 import useBlock from 'hooks/useBlock'
 import { getBalanceNumber } from 'utils/formatBalance'
-import { useJuiceHarvest } from 'hooks/useHarvest'
+import { useMangoHarvest } from 'hooks/useHarvest'
 import Balance from 'components/Balance'
 import { QuoteToken, PoolCategory } from 'config/constants/types'
 import { Pool } from 'state/types'
@@ -21,7 +21,7 @@ import WithdrawModal from './WithdrawModal'
 import CompoundModal from './CompoundModal'
 import CardTitle from './CardTitle'
 import Card from './Card'
-import OldJuiceTitle from './OldJuiceTitle'
+import OldMangoTitle from './OldMangoTitle'
 import HarvestButton from './HarvestButton'
 import CardFooter from './CardFooter'
 
@@ -58,10 +58,10 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   const stakingTokenContract = useERC20(stakingTokenAddress)
   const { account } = useWallet()
   const block = useBlock()
-  const { onApprove } = useJuiceApprove(stakingTokenContract, juiceId)
-  const { onStake } = useJuiceStake(juiceId, isBnbPool)
-  const { onUnstake } = useJuiceUnstake(juiceId)
-  const { onReward } = useJuiceHarvest(juiceId, isBnbPool)
+  const { onApprove } = useMangoApprove(stakingTokenContract, juiceId)
+  const { onStake } = useMangoStake(juiceId, isBnbPool)
+  const { onUnstake } = useMangoUnstake(juiceId)
+  const { onReward } = useMangoHarvest(juiceId, isBnbPool)
 
   const [requestedApproval, setRequestedApproval] = useState(false)
   const [pendingTx, setPendingTx] = useState(false)
@@ -73,7 +73,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
 
   const blocksUntilStart = Math.max(startBlock - block, 0)
   const blocksRemaining = Math.max(endBlock - block, 0)
-  const isOldJuice = stakingTokenName === QuoteToken.SYRUP
+  const isOldMango = stakingTokenName === QuoteToken.SYRUP
   const accountHasStakedBalance = stakedBalance?.toNumber() > 0
   const needsApproval = !accountHasStakedBalance && !allowance.toNumber() && !isBnbPool
   const isCardActive = isFinished && accountHasStakedBalance
@@ -113,13 +113,13 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
       {isFinished && juiceId !== 0 && <PoolFinishedSash />}
       <div style={{ padding: '24px' }}>
         <CardTitle isFinished={isFinished && juiceId !== 0}>
-          {isOldJuice && '[OLD]'} {tokenName} {TranslateString(348, 'Pool')}
+          {isOldMango && '[OLD]'} {tokenName} {TranslateString(348, 'Pool')}
         </CardTitle>
         <div style={{ marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
           <div style={{ flex: 1 }}>
             <Image src={`/images/tokens/${image || tokenName}.png`} width={64} height={64} alt={tokenName} />
           </div>
-          {account && harvest && !isOldJuice && (
+          {account && harvest && !isOldMango && (
             <HarvestButton
               disabled={!earnings.toNumber() || pendingTx}
               text={pendingTx ? 'Collecting' : 'Harvest'}
@@ -131,7 +131,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             />
           )}
         </div>
-        {!isOldJuice ? (
+        {!isOldMango ? (
           <BalanceAndCompound>
             <Balance value={getBalanceNumber(earnings, tokenDecimals)} isDisabled={isFinished} />
             {juiceId === 0 && account && harvest && (
@@ -143,13 +143,13 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             )}
           </BalanceAndCompound>
         ) : (
-          <OldJuiceTitle hasBalance={accountHasStakedBalance} />
+          <OldMangoTitle hasBalance={accountHasStakedBalance} />
         )}
         <Label isFinished={isFinished && juiceId !== 0} text={TranslateString(330, `${tokenName} earned`)} />
         <StyledCardActions>
           {!account && <UnlockButton />}
           {account &&
-            (needsApproval && !isOldJuice ? (
+            (needsApproval && !isOldMango ? (
               <div style={{ flex: 1 }}>
                 <Button disabled={isFinished || requestedApproval} onClick={handleApprove} fullWidth>
                   {`Approve ${stakingTokenName}`}
@@ -160,7 +160,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                 <Button
                   disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx}
                   onClick={
-                    isOldJuice
+                    isOldMango
                       ? async () => {
                           setPendingTx(true)
                           await onUnstake('0')
@@ -172,7 +172,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                   {`Unstake ${stakingTokenName}`}
                 </Button>
                 <StyledActionSpacer />
-                {!isOldJuice && (
+                {!isOldMango && (
                   <IconButton disabled={isFinished && juiceId !== 0} onClick={onPresentDeposit}>
                     <AddIcon color="background" />
                   </IconButton>
@@ -182,7 +182,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         </StyledCardActions>
         <StyledDetails>
           <div style={{ flex: 1 }}>{TranslateString(736, 'APR')}:</div>
-          {isFinished || isOldJuice || !apy || apy?.isNaN() || !apy?.isFinite() ? (
+          {isFinished || isOldMango || !apy || apy?.isNaN() || !apy?.isFinite() ? (
             '-'
           ) : (
             <Balance fontSize="14px" isDisabled={isFinished} value={apy?.toNumber()} decimals={2} unit="%" />

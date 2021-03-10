@@ -69,7 +69,7 @@ export const useMasterchef = () => {
   return useContract(abi, getMasterChefAddress())
 }
 
-export const useJuiceChef = (id) => {
+export const useMangoChef = (id) => {
   const config = poolsConfig.find((pool) => pool.juiceId === id)
   const rawAbi = config.poolCategory === PoolCategory.BINANCE ? juiceChefBnb : juiceChef
   const abi = (rawAbi as unknown) as AbiItem

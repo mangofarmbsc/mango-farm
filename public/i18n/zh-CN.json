@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "\u81ea\u53d1\u8d77\u4ee5\u6765\u7684 JUICE \u603b\u711a\u6bc1\u91cf"
+        "text": "\u81ea\u53d1\u8d77\u4ee5\u6765\u7684 MANGO \u603b\u711a\u6bc1\u91cf"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "\u8d28\u62bc LP \u4ee3\u5e01\u4ee5\u5806\u53e0 JUICE"
+        "text": "\u8d28\u62bc LP \u4ee3\u5e01\u4ee5\u5806\u53e0 MANGO"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "\u8d28\u62bc JUICE\uff0c\u83b7\u53d6 SYRUP\u3002"
+        "text": "\u8d28\u62bc MANGO\uff0c\u83b7\u53d6 SYRUP\u3002"
       }
     },
     {
@@ -153,7 +153,7 @@
     {
       "data": {
         "stringId": 334,
-        "text": "\u6bcf\u6b21\u60a8\u8d28\u62bc\u4e0e\u53d6\u6d88\u8d28\u62bc JUICE \u4ee3\u5e01\u65f6\uff0c\u5408\u7ea6\u90fd\u4f1a\u81ea\u52a8\u4e3a\u60a8\u6536\u5272 JUICE \u5956\u52b1\uff01"
+        "text": "\u6bcf\u6b21\u60a8\u8d28\u62bc\u4e0e\u53d6\u6d88\u8d28\u62bc MANGO \u4ee3\u5e01\u65f6\uff0c\u5408\u7ea6\u90fd\u4f1a\u81ea\u52a8\u4e3a\u60a8\u6536\u5272 MANGO \u5956\u52b1\uff01"
       }
     },
     {
@@ -219,7 +219,7 @@
     {
       "data": {
         "stringId": 358,
-        "text": "JUICE \u4ef7\u683c"
+        "text": "MANGO \u4ef7\u683c"
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 JUICE = 1 SYRUP"
+        "text": "1 MANGO = 1 SYRUP"
       }
     },
     {
@@ -291,7 +291,7 @@
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP \u6301\u6709\u8005\u6bcf\u5929\u5c06\u6309\u6bd4\u4f8b\u5206\u4eab JUICE \u533a\u5757\u5956\u52b1\u7684 25%\uff08\u6bcf\u4e2a\u533a\u5757 10 JUICE\uff09\uff0c\u5956\u52b1\u6309\u533a\u5757\u5206\u53d1\u3002"
+        "text": "SYRUP \u6301\u6709\u8005\u6bcf\u5929\u5c06\u6309\u6bd4\u4f8b\u5206\u4eab MANGO \u533a\u5757\u5956\u52b1\u7684 25%\uff08\u6bcf\u4e2a\u533a\u5757 10 MANGO\uff09\uff0c\u5956\u52b1\u6309\u533a\u5757\u5206\u53d1\u3002"
       }
     },
     {
@@ -351,13 +351,13 @@
     {
       "data": {
         "stringId": 424,
-        "text": "%num% JUICE"
+        "text": "%num% MANGO"
       }
     },
     {
       "data": {
         "stringId": 426,
-        "text": "\u82b1\u8d39 JUICE \u8d2d\u4e70\u5f69\u7968\uff0c\u4e3a\u5956\u6c60\u505a\u8d21\u732e\u3002\u5f69\u7968\u8d2d\u4e70\u5728\u5f00\u5956\u524d\u7ea6 30 \u5206\u949f\u7ed3\u675f\u3002\u5982\u679c\u60a8\u7684\u5f69\u7968\u4e2d\u4e86 2\u30013 \u6216 4 \u4e2a\u53f7\u7801\u4e14\u987a\u5e8f\u4e00\u81f4\uff0c\u5219\u4f1a\u8d62\u53d6\u5956\u91d1\uff01\u795d\u60a8\u597d\u8fd0\uff01"
+        "text": "\u82b1\u8d39 MANGO \u8d2d\u4e70\u5f69\u7968\uff0c\u4e3a\u5956\u6c60\u505a\u8d21\u732e\u3002\u5f69\u7968\u8d2d\u4e70\u5728\u5f00\u5956\u524d\u7ea6 30 \u5206\u949f\u7ed3\u675f\u3002\u5982\u679c\u60a8\u7684\u5f69\u7968\u4e2d\u4e86 2\u30013 \u6216 4 \u4e2a\u53f7\u7801\u4e14\u987a\u5e8f\u4e00\u81f4\uff0c\u5219\u4f1a\u8d62\u53d6\u5956\u91d1\uff01\u795d\u60a8\u597d\u8fd0\uff01"
       }
     },
     {
@@ -435,25 +435,25 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% JUICE \u53ef\u7528"
+        "text": "%num% MANGO \u53ef\u7528"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "\u60a8\u7684\u91d1\u989d\u5fc5\u987b\u7b49\u4e8e 10 JUICE \u7684\u500d\u6570"
+        "text": "\u60a8\u7684\u91d1\u989d\u5fc5\u987b\u7b49\u4e8e 10 MANGO \u7684\u500d\u6570"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 \u5f20\u5f69\u7968 = 10 JUICE"
+        "text": "1 \u5f20\u5f69\u7968 = 10 MANGO"
       }
     },
     {
       "data": {
         "stringId": 460,
-        "text": "\u60a8\u5c06\u82b1\u8d39\uff1a%num% JUICE"
+        "text": "\u60a8\u5c06\u82b1\u8d39\uff1a%num% MANGO"
       }
     },
     {
@@ -483,7 +483,7 @@
     {
       "data": {
         "stringId": 470,
-        "text": "\u5728\u60a8\u82b1\u8d39 JUICE \u8d2d\u4e70\u5f69\u7968\u540e\uff0c\u65e0\u6cd5\u5c06 JUICE \u9000\u8fd8\u7ed9\u60a8\u3002"
+        "text": "\u5728\u60a8\u82b1\u8d39 MANGO \u8d2d\u4e70\u5f69\u7968\u540e\uff0c\u65e0\u6cd5\u5c06 MANGO \u9000\u8fd8\u7ed9\u60a8\u3002"
       }
     },
     {
@@ -507,7 +507,7 @@
     {
       "data": {
         "stringId": 478,
-        "text": "\u5f69\u7968\u8d2d\u4e70\u4e3a\u6700\u7ec8\u72b6\u6001\u3002\u8d2d\u4e70\u5f69\u7968\u540e\uff0c\u65e0\u6cd5\u5c06 JUICE \u9000\u8fd8\u7ed9\u60a8\u3002"
+        "text": "\u5f69\u7968\u8d2d\u4e70\u4e3a\u6700\u7ec8\u72b6\u6001\u3002\u8d2d\u4e70\u5f69\u7968\u540e\uff0c\u65e0\u6cd5\u5c06 MANGO \u9000\u8fd8\u7ed9\u60a8\u3002"
       }
     },
     {
@@ -519,7 +519,7 @@
     {
       "data": {
         "stringId": 482,
-        "text": "\u5f85\u9886\u53d6\u7684 JUICE \u5956\u91d1"
+        "text": "\u5f85\u9886\u53d6\u7684 MANGO \u5956\u91d1"
       }
     },
     {
@@ -555,13 +555,13 @@
     {
       "data": {
         "stringId": 494,
-        "text": "\u6279\u51c6 JUICE"
+        "text": "\u6279\u51c6 MANGO"
       }
     },
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP \u6301\u6709\u8005\u6bcf\u5929\u5c06\u6309\u6bd4\u4f8b\u5206\u4eab JUICE \u533a\u5757\u5956\u52b1\u7684 40%\uff08\u6bcf\u4e2a\u533a\u5757 10 JUICE\uff09\uff0c\u5956\u52b1\u6309\u533a\u5757\u5206\u53d1\u3002"
+        "text": "SYRUP \u6301\u6709\u8005\u6bcf\u5929\u5c06\u6309\u6bd4\u4f8b\u5206\u4eab MANGO \u533a\u5757\u5956\u52b1\u7684 40%\uff08\u6bcf\u4e2a\u533a\u5757 10 MANGO\uff09\uff0c\u5956\u52b1\u6309\u533a\u5757\u5206\u53d1\u3002"
       }
     },
     {
@@ -579,19 +579,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "\u60a8\u5c06\u4f7f\u7528 JUICE-BNB LP \u4ee3\u5e01\u6765\u652f\u4ed8\u65b0\u4ee3\u5e01\u7684\u8d39\u7528\uff0c\u8fd9\u610f\u5473\u7740\u60a8\u9700\u8981\u5728\u6d41\u52a8\u6027\u8d44\u91d1\u6c60\u4e2d\u8d28\u62bc\u7b49\u91cf\u7684 JUICE \u548c BNB \u624d\u80fd\u53c2\u4e0e\u3002"
+        "text": "\u60a8\u5c06\u4f7f\u7528 MANGO-BNB LP \u4ee3\u5e01\u6765\u652f\u4ed8\u65b0\u4ee3\u5e01\u7684\u8d39\u7528\uff0c\u8fd9\u610f\u5473\u7740\u60a8\u9700\u8981\u5728\u6d41\u52a8\u6027\u8d44\u91d1\u6c60\u4e2d\u8d28\u62bc\u7b49\u91cf\u7684 MANGO \u548c BNB \u624d\u80fd\u53c2\u4e0e\u3002"
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "\u83b7\u53d6 JUICE-BNB LP >"
+        "text": "\u83b7\u53d6 MANGO-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "\u6b64\u9879\u76ee\u83b7\u5f97\u4e86 BNB\uff0cMango Finance \u4f1a\u711a\u6bc1 JUICE\u3002"
+        "text": "\u6b64\u9879\u76ee\u83b7\u5f97\u4e86 BNB\uff0cMango Finance \u4f1a\u711a\u6bc1 MANGO\u3002"
       }
     },
     {
@@ -657,7 +657,7 @@
     {
       "data": {
         "stringId": 534,
-        "text": "JUICE \u7edf\u8ba1\u6570\u636e"
+        "text": "MANGO \u7edf\u8ba1\u6570\u636e"
       }
     },
     {
@@ -675,7 +675,7 @@
     {
       "data": {
         "stringId": 540,
-        "text": "\u65b0 JUICE\/\u533a\u5757"
+        "text": "\u65b0 MANGO\/\u533a\u5757"
       }
     },
     {
@@ -687,19 +687,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "\u5f85\u6536\u5272\u7684 JUICE"
+        "text": "\u5f85\u6536\u5272\u7684 MANGO"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "\u94b1\u5305\u4e2d\u7684 JUICE"
+        "text": "\u94b1\u5305\u4e2d\u7684 MANGO"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "\u6b63\u5728\u6536\u96c6 JUICE"
+        "text": "\u6b63\u5728\u6536\u96c6 MANGO"
       }
     },
     {
@@ -711,7 +711,7 @@
     {
       "data": {
         "stringId": 552,
-        "text": "\u5f85\u6536\u96c6\u7684 JUICE"
+        "text": "\u5f85\u6536\u96c6\u7684 MANGO"
       }
     },
     {
@@ -777,7 +777,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "\u8d28\u62bc JUICE \u4ee5\u8d5a\u53d6\u65b0\u4ee3\u5e01\u3002"
+        "text": "\u8d28\u62bc MANGO \u4ee5\u8d5a\u53d6\u65b0\u4ee3\u5e01\u3002"
       }
     },
     {
@@ -795,7 +795,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "\u5c06\u711a\u6bc1\u7684 JUICE (USD)"
+        "text": "\u5c06\u711a\u6bc1\u7684 MANGO (USD)"
       }
     },
     {
@@ -807,7 +807,7 @@
     {
       "data": {
         "stringId": 590,
-        "text": "\u2b50\ufe0f \u6bcf\u6b21\u60a8\u8d28\u62bc\u548c\u53d6\u6d88\u8d28\u62bc LP \u4ee3\u5e01\u65f6\uff0c\u5408\u7ea6\u90fd\u4f1a\u81ea\u52a8\u4e3a\u60a8\u6536\u5272 JUICE \u5956\u52b1\uff01"
+        "text": "\u2b50\ufe0f \u6bcf\u6b21\u60a8\u8d28\u62bc\u548c\u53d6\u6d88\u8d28\u62bc LP \u4ee3\u5e01\u65f6\uff0c\u5408\u7ea6\u90fd\u4f1a\u81ea\u52a8\u4e3a\u60a8\u6536\u5272 MANGO \u5956\u52b1\uff01"
       }
     },
     {
@@ -825,13 +825,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "\u8d2d\u4e70 JUICE \u548c BNB \u4ee3\u5e01"
+        "text": "\u8d2d\u4e70 MANGO \u548c BNB \u4ee3\u5e01"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "\u901a\u8fc7\u6dfb\u52a0 JUICE \u548c BNB \u6d41\u52a8\u6027\u83b7\u53d6 JUICE-BNB LP \u4ee3\u5e01"
+        "text": "\u901a\u8fc7\u6dfb\u52a0 MANGO \u548c BNB \u6d41\u52a8\u6027\u83b7\u53d6 MANGO-BNB LP \u4ee3\u5e01"
       }
     },
     {
@@ -843,7 +843,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "\u5728\u9500\u552e\u8fc7\u7a0b\u4e2d\uff0c\u63d0\u4ea4\u60a8\u7684 JUICE-LP \u4ee3\u5e01\u6765\u8d2d\u4e70 IFO \u4ee3\u5e01"
+        "text": "\u5728\u9500\u552e\u8fc7\u7a0b\u4e2d\uff0c\u63d0\u4ea4\u60a8\u7684 MANGO-LP \u4ee3\u5e01\u6765\u8d2d\u4e70 IFO \u4ee3\u5e01"
       }
     },
     {
@@ -879,7 +879,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "\u5151\u6362\u6210 JUICE\uff0c\u6216\u8005\u4fdd\u7559\u4f5c\u4e3a\u60a8\u7684\u6536\u85cf\u54c1\uff01"
+        "text": "\u5151\u6362\u6210 MANGO\uff0c\u6216\u8005\u4fdd\u7559\u4f5c\u4e3a\u60a8\u7684\u6536\u85cf\u54c1\uff01"
       }
     },
     {
@@ -921,7 +921,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "\u5f53\u60a8\u5c06 NFT \u5151\u6362\u6210 JUICE \u540e\uff0c\u60a8\u5c06\u6c38\u8fdc\u65e0\u6cd5\u8bbf\u95ee\u5b83\uff01"
+        "text": "\u5f53\u60a8\u5c06 NFT \u5151\u6362\u6210 MANGO \u540e\uff0c\u60a8\u5c06\u6c38\u8fdc\u65e0\u6cd5\u8bbf\u95ee\u5b83\uff01"
       }
     },
     {
@@ -951,7 +951,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "\u5728\u4e0b\u9762\u5217\u51fa\u7684\u5230\u671f\u65e5\u4e4b\u524d\uff0c\u83b7\u80dc\u8005\u53ef\u4ee5\u5c06\u5176 NFT \u5151\u6362\u6210 JUICE \u4ef7\u503c\u3002\u5982\u679c\u60a8\u5c4a\u65f6\u672a\u5151\u6362\u60a8\u7684 NFT\uff0c\u8bf7\u4e0d\u8981\u62c5\u5fc3\uff1a\u60a8\u4ecd\u53ef\u4ee5\u5c06\u5176\u4fdd\u5b58\u5728\u94b1\u5305\u4e2d\uff01"
+        "text": "\u5728\u4e0b\u9762\u5217\u51fa\u7684\u5230\u671f\u65e5\u4e4b\u524d\uff0c\u83b7\u80dc\u8005\u53ef\u4ee5\u5c06\u5176 NFT \u5151\u6362\u6210 MANGO \u4ef7\u503c\u3002\u5982\u679c\u60a8\u5c4a\u65f6\u672a\u5151\u6362\u60a8\u7684 NFT\uff0c\u8bf7\u4e0d\u8981\u62c5\u5fc3\uff1a\u60a8\u4ecd\u53ef\u4ee5\u5c06\u5176\u4fdd\u5b58\u5728\u94b1\u5305\u4e2d\uff01"
       }
     },
     {
@@ -993,7 +993,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "\u5151\u6362\u6210 JUICE"
+        "text": "\u5151\u6362\u6210 MANGO"
       }
     },
     {
@@ -1119,7 +1119,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "\u8d28\u62bc LP \u4ee3\u5e01\u4ee5\u8d5a\u53d6 JUICE"
+        "text": "\u8d28\u62bc LP \u4ee3\u5e01\u4ee5\u8d5a\u53d6 MANGO"
       }
     },
     {
@@ -1161,13 +1161,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "JUICE \u5f69\u7968"
+        "text": "MANGO \u5f69\u7968"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "\u4f7f\u7528 JUICE \u8d2d\u4e70\u5f69\u7968"
+        "text": "\u4f7f\u7528 MANGO \u8d2d\u4e70\u5f69\u7968"
       }
     },
     {
@@ -1209,7 +1209,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": "质押费用将用于回购 JUICE"
+        "text": "质押费用将用于回购 MANGO"
       }
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "质押代币以堆叠 JUICE"
+        "text": "质押代币以堆叠 MANGO"
       }
     },
     {
