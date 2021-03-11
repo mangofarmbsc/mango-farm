@@ -1837,10 +1837,10 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
-"@mangofarm/uikit@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mangofarm/uikit/-/uikit-0.1.1.tgz#f76e72bea84cd915545851a1faef6d1540c0b16c"
-  integrity sha512-p0saiQ5/0+lC/0FrQpHxMGpDouzx0oFCuvFfQTZRYz9UD8aGCxlC+GefsXTcp3Np6ZKy1LLD4ycB0ERKUnxM9A==
+"@mangofarm/uikit@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mangofarm/uikit/-/uikit-0.1.2.tgz#071f5494648898a3096245dff593b6b4297026c0"
+  integrity sha512-GhyRZkMD0AKFdX0eLSbUbK1H3AIx8PEr2RFwZ7Pd3bOfAncO7O1dUSuU5zJ0ZRR6OSD94r9qdfaWJakX7zdVNg==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
