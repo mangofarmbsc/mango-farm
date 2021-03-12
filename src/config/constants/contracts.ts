@@ -27,4 +27,8 @@ export default {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     97: '',
   },
+  ifo: {
+    56: '0xF90Ee56bCF8411f67FD0E44776b2f2A566Ef5bC2',
+    97: '',
+  },
 }
