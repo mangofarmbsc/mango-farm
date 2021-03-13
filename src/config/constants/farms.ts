@@ -85,24 +85,6 @@ const farms: FarmConfig[] = [
   quoteTokenSymbol: QuoteToken.PIZZA,
   quoteTokenAdresses: contracts.pizza,
 },
-/**
-  {
-    pid: 3,
-    risk: 5,
-    isTokenOnly: true,
-    lpSymbol: 'MANGO',
-    lpAddresses: {
-      97: '',
-      56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-    },
-    tokenSymbol: 'BNB',
-    tokenAddresses: {
-      97: '',
-      56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  } * */
 ]
 
 export default farms
