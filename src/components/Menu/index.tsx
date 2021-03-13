@@ -25,7 +25,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       mangoPriceUsd={mangoPriceUsd.toNumber()}
       links={config}
-      priceLink="#"
+      priceLink="https://info.cheeseswap.app/pair/0xB0361a92E2646F9F11f1670484f09D585fe4a419"
       {...props}
     />
   )
