@@ -74,13 +74,13 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceMangoBusd = (): BigNumber => {
-  // const pid = 1 // MANGO-BNB LP
-  // const bnbPriceUSD = usePriceBnbBusd()
-  // const farm = useFarmFromPid(pid)
-  // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  const pid = 0 // MANGO-BUSD LP
+  const pid = 1 // MANGO-BNB LP
+   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
-  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
+  return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
+//  const pid = 0 // MANGO-BUSD LP
+//  const farm = useFarmFromPid(pid)
+//  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const useTotalValue = (): BigNumber => {

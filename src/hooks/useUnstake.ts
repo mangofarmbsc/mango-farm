@@ -27,7 +27,7 @@ const useUnstake = (pid: number) => {
   return { onUnstake: handleUnstake }
 }
 
-const JUICEIDS = [5, 6, 3, 1, 22, 23]
+const JUICEIDS = []
 
 export const useMangoUnstake = (mangoId) => {
   const dispatch = useDispatch()
