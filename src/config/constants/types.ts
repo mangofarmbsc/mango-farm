@@ -19,14 +19,22 @@ export interface Ifo {
   releaseBlockNumber: number
 }
 
-export enum QuoteToken {
+  export enum QuoteToken {
   'BNB' = 'BNB',
   'MANGO' = 'MANGO',
-  'SYRUP' = 'SYRUP',
+  'PIZZA' = 'PIZZA',
+  'CHS' = 'CHS',
+  'USDT' = 'USDT',
   'BUSD' = 'BUSD',
-  'TWT' = 'TWT',
-  'UST' = 'UST',
+  'HOTS' = 'HOTS',
+  'DAI' = 'DAI',
+  'ETH' = 'ETH',
+  'USDC' = 'USDC',
+  'CAKE' = 'CAKE',
+  'JUICE' = 'JUICE',
 }
+
+
 
 export enum PoolCategory {
   'COMMUNITY' = 'Community',

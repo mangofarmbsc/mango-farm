@@ -27,14 +27,14 @@ const useUnstake = (pid: number) => {
   return { onUnstake: handleUnstake }
 }
 
-const SYRUPIDS = [5, 6, 3, 1, 22, 23]
+const JUICEIDS = [5, 6, 3, 1, 22, 23]
 
 export const useMangoUnstake = (mangoId) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
   const mangoChefContract = useMangoChef(mangoId)
-  const isOldMango = SYRUPIDS.includes(mangoId)
+  const isOldMango = JUICEIDS.includes(mangoId)
 
   const handleUnstake = useCallback(
     async (amount: string) => {

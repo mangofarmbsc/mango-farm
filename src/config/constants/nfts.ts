@@ -15,7 +15,7 @@ const Nfts: Nft[] = [
   },
   {
     name: 'Drizzle',
-    description: "It's raining syrup on this bunny, but he doesn't seem to mind. Can you blame him?",
+    description: "It's raining juice on this bunny, but he doesn't seem to mind. Can you blame him?",
     originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/drizzle.png',
     previewImage: 'drizzle-preview.png',
     blurImage: 'drizzle-blur.png',
@@ -42,7 +42,7 @@ const Nfts: Nft[] = [
   },
   {
     name: 'Sparkle',
-    description: 'It’s sparkling syrup, mangos, and even lottery tickets! This bunny really loves it.',
+    description: 'It’s sparkling juice, mangos, and even lottery tickets! This bunny really loves it.',
     originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/sparkle.png',
     previewImage: 'sparkle-preview.png',
     blurImage: 'sparkle-blur.png',

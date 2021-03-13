@@ -159,13 +159,13 @@
     {
       "data": {
         "stringId": 338,
-        "text": "\u526f\u4e3b\u5eda\u6b63\u5728\u70ba\u6240\u6709\u7684 SYRUP \u6301\u6709\u8005\u70f9\u716e\u795e\u79d8\u6599\u7406"
+        "text": "\u526f\u4e3b\u5eda\u6b63\u5728\u70ba\u6240\u6709\u7684 JUICE \u6301\u6709\u8005\u70f9\u716e\u795e\u79d8\u6599\u7406"
       }
     },
     {
       "data": {
         "stringId": 340,
-        "text": "\u5df2\u8cea\u62bc\u7684 SYRUP \u4ee3\u5e63"
+        "text": "\u5df2\u8cea\u62bc\u7684 JUICE \u4ee3\u5e63"
       }
     },
     {
@@ -177,7 +177,7 @@
     {
       "data": {
         "stringId": 344,
-        "text": "\u8cea\u62bc\u60a8\u7684 SYRUP \u4ee5\u8cfa\u53d6\u65b0\u5c08\u6848\u7684\u4ee3\u5e63\u3002"
+        "text": "\u8cea\u62bc\u60a8\u7684 JUICE \u4ee5\u8cfa\u53d6\u65b0\u5c08\u6848\u7684\u4ee3\u5e63\u3002"
       }
     },
     {
@@ -237,13 +237,13 @@
     {
       "data": {
         "stringId": 364,
-        "text": "\u7e3d\u8cea\u62bc SYRUP"
+        "text": "\u7e3d\u8cea\u62bc JUICE"
       }
     },
     {
       "data": {
         "stringId": 380,
-        "text": "1 MANGO = 1 SYRUP"
+        "text": "1 MANGO = 1 JUICE"
       }
     },
     {
@@ -285,19 +285,19 @@
     {
       "data": {
         "stringId": 394,
-        "text": "\u53d6\u56de SYRUP"
+        "text": "\u53d6\u56de JUICE"
       }
     },
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP \u6301\u6709\u8005\u5c07\u6309\u6bd4\u4f8b\u5206\u5f97\u6bcf\u5929 25% \u7684 MANGO \u5340\u584a\u734e\u52f5 (\u6bcf\u5340\u584a 10 MANGO)\uff0c\u734e\u52f5\u5c07\u65bc\u5404\u5340\u584a\u5206\u767c\u3002"
+        "text": "JUICE \u6301\u6709\u8005\u5c07\u6309\u6bd4\u4f8b\u5206\u5f97\u6bcf\u5929 25% \u7684 MANGO \u5340\u584a\u734e\u52f5 (\u6bcf\u5340\u584a 10 MANGO)\uff0c\u734e\u52f5\u5c07\u65bc\u5404\u5340\u584a\u5206\u767c\u3002"
       }
     },
     {
       "data": {
         "stringId": 402,
-        "text": "\u8cea\u62bc SYRUP \u4ee5\u8cfa\u53d6\u65b0\u4ee3\u5e63\u3002"
+        "text": "\u8cea\u62bc JUICE \u4ee5\u8cfa\u53d6\u65b0\u4ee3\u5e63\u3002"
       }
     },
     {
@@ -561,7 +561,7 @@
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP \u6301\u6709\u8005\u5c07\u6309\u6bd4\u4f8b\u5206\u5f97\u6bcf\u5929 40% \u7684 MANGO \u5340\u584a\u734e\u52f5 (\u6bcf\u5340\u584a 10 MANGO)\uff0c\u734e\u52f5\u5c07\u65bc\u5404\u5340\u584a\u5206\u767c\u3002"
+        "text": "JUICE \u6301\u6709\u8005\u5c07\u6309\u6bd4\u4f8b\u5206\u5f97\u6bcf\u5929 40% \u7684 MANGO \u5340\u584a\u734e\u52f5 (\u6bcf\u5340\u584a 10 MANGO)\uff0c\u734e\u52f5\u5c07\u65bc\u5404\u5340\u584a\u5206\u767c\u3002"
       }
     },
     {

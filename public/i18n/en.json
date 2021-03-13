@@ -129,7 +129,7 @@
     {
       "data": {
         "stringId": 322,
-        "text": "Stake Mango, get SYRUP."
+        "text": "Stake Mango, get JUICE."
       }
     },
     {
@@ -159,13 +159,13 @@
     {
       "data": {
         "stringId": 338,
-        "text": "The Mango Chef is cooking up a treat for all SYRUP holders"
+        "text": "The Mango Chef is cooking up a treat for all JUICE holders"
       }
     },
     {
       "data": {
         "stringId": 340,
-        "text": "SYRUP Tokens Staked"
+        "text": "JUICE Tokens Staked"
       }
     },
     {
@@ -177,7 +177,7 @@
     {
       "data": {
         "stringId": 344,
-        "text": "Stake your SYRUP to earn tokens of new projects."
+        "text": "Stake your JUICE to earn tokens of new projects."
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 MANGO = 1 SYRUP"
+        "text": "1 MANGO = 1 JUICE"
       }
     },
     {
@@ -285,19 +285,19 @@
     {
       "data": {
         "stringId": 394,
-        "text": "Unstake SYRUP"
+        "text": "Unstake JUICE"
       }
     },
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP holders proportionally split 25% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
+        "text": "JUICE holders proportionally split 25% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
       }
     },
     {
       "data": {
         "stringId": 402,
-        "text": "Stake SYRUP to earn new tokens."
+        "text": "Stake JUICE to earn new tokens."
       }
     },
     {
@@ -549,7 +549,7 @@
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP holders proportionally split 40% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
+        "text": "JUICE holders proportionally split 40% of MANGO block emissions each day (10 MANGO per block), Rewards are distributed each block."
       }
     },
     {
