@@ -75,7 +75,7 @@ const farms: FarmConfig[] = [
   lpSymbol: 'MANGO-PIZZA LP',
   lpAddresses: {
     97: '',
-    56: '0xF63c29444fdE98d8227088Cd4AEb48E33B6b0000',
+    56: '0x80bEC1095372cE1A01e3ACd2A5B5eC3140DdFA20',
   },
   tokenSymbol: 'MANGO',
   tokenAddresses: {
