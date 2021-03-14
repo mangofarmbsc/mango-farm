@@ -137,6 +137,24 @@ const farms: FarmConfig[] = [
  quoteTokenSymbol: QuoteToken.BNB,
  quoteTokenAdresses: contracts.wbnb,
 },
+
+
+{
+ pid: 9,
+ risk: 3,
+ lpSymbol: 'CHS-BNB LP',
+ lpAddresses: {
+   97: '',
+   56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',
+ },
+ tokenSymbol: 'CHS',
+ tokenAddresses: {
+   97: '',
+   56: '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464',
+ },
+ quoteTokenSymbol: QuoteToken.BNB,
+ quoteTokenAdresses: contracts.wbnb,
+},
 ]
 
 export default farms
