@@ -85,6 +85,58 @@ const farms: FarmConfig[] = [
   quoteTokenSymbol: QuoteToken.PIZZA,
   quoteTokenAdresses: contracts.pizza,
 },
+
+{
+ pid: 6,
+ risk: 3,
+ lpSymbol: 'ETH-BUSD LP',
+ lpAddresses: {
+   97: '',
+   56: '0x7d1a03b432c5f04A426F4Eaf41037fe8Dd695b89',
+ },
+ tokenSymbol: 'ETH',
+ tokenAddresses: {
+   97: '',
+   56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+ },
+ quoteTokenSymbol: QuoteToken.BUSD,
+ quoteTokenAdresses: contracts.busd,
+},
+
+{
+ pid: 7,
+ risk: 3,
+ lpSymbol: 'USDT-BNB LP',
+ lpAddresses: {
+   97: '',
+   56: '0xcfD63197d764cd70d07bB607e6367Ae0E869BaDD',
+ },
+ tokenSymbol: 'USDT',
+ tokenAddresses: {
+   97: '',
+   56: '0x55d398326f99059ff775485246999027b3197955',
+ },
+ quoteTokenSymbol: QuoteToken.BNB,
+ quoteTokenAdresses: contracts.wbnb,
+},
+
+
+{
+ pid: 8,
+ risk: 3,
+ lpSymbol: 'PIZZA-BNB LP',
+ lpAddresses: {
+   97: '',
+   56: '0x8405be915af56589756a275d4894fa9f0ff6ca0f',
+ },
+ tokenSymbol: 'PIZZA',
+ tokenAddresses: {
+   97: '',
+   56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
+ },
+ quoteTokenSymbol: QuoteToken.BNB,
+ quoteTokenAdresses: contracts.wbnb,
+},
 ]
 
 export default farms
