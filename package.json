@@ -1,6 +1,7 @@
 {
   "name": "mango-frontend",
   "version": "0.1.0",
+  "homepage": "https://mangofarm.finance",
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
