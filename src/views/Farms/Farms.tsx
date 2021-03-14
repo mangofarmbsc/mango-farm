@@ -52,11 +52,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   // to retrieve assets prices against USD
   const farmsList = useCallback(
     (farmsToDisplay, removed: boolean) => {
-      // const mangoPriceVsBNB = new BigNumber(farmsLP.find((farm) => farm.pid === MANGO_POOL_PID)?.tokenPriceVsQuote || 0)
+      const mangoPriceVsBNB = new BigNumber(farmsLP.find((farm) => farm.pid === MANGO_POOL_PID)?.tokenPriceVsQuote || 0)
       const farmsToDisplayWithAPY: FarmWithStakedValue[] = farmsToDisplay.map((farm) => {
-        // if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
-        //   return farm
-        // }
+        if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
+        return farm
+        }
         const mangoRewardPerBlock = new BigNumber(farm.mangoPerBlock || 1)
           .times(new BigNumber(farm.poolWeight))
           .div(new BigNumber(10).pow(18))
@@ -88,7 +88,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         />
       ))
     },
-    [bnbPrice, account, mangoPrice, ethereum],
+    [bnbPrice, account, mangoPrice, farmsLP, ethereum],
   )
 
   return (
@@ -99,7 +99,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           : TranslateString(320, 'Stake LP tokens to earn MANGO')}
       </Heading>
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback MANGO')}
+        {TranslateString(10000, 'Deposit Fee will be used to Buyback MANGO Every Sunday')}
       </Heading>
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <div>
