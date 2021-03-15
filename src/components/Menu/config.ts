@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Swap',
-        href: 'https://cheeseswap.app/',
+        href: 'https://cheeseswap.app/#/swap?inputCurrency=0x3d29cdb00cb183a0aeceea4fb73f55e1450af3d4&outputCurrency=ETH',
       },
       {
         label: 'Liquidity',
-        href: 'https://cheeseswap.app/#/pool',
+        href: 'https://cheeseswap.app/#/add/ETH/0x3d29cdb00cb183a0aeceea4fb73f55e1450af3d4',
       },
     ],
   },
@@ -25,11 +25,11 @@ const config: MenuEntry[] = [
     icon: 'FarmIcon',
     href: '/farms',
   },
-  {
-    label: 'Mango',
-    icon: 'PoolIcon',
-    href: '/mango',
-  },
+  // {
+  //   label: 'Mango',
+  //   icon: 'PoolIcon',
+  //   href: '/mango',
+  // },
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',
@@ -55,11 +55,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Tokens',
-        href: 'https://info.cheeseswap.app/tokens',
+        href: 'https://info.cheeseswap.app/token/0x3d29cdb00cb183a0aeceea4fb73f55e1450af3d4',
       },
       {
         label: 'Pairs',
-        href: 'https://info.cheeseswap.app/pairs',
+        href: 'https://info.cheeseswap.app/pair/0xB0361a92E2646F9F11f1670484f09D585fe4a419',
       },
       {
         label: 'Accounts',
