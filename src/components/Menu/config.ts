@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Swap',
-        href: 'https://cheeseswap.app/#/swap?inputCurrency=0x3d29cdb00cb183a0aeceea4fb73f55e1450af3d4&outputCurrency=0xadd8a06fd58761a5047426e160b2b88ad3b9d464',
+        href: 'https://cheeseswap.app/#/swap?inputCurrency=0x3d29cdb00cb183a0aeceea4fb73f55e1450af3d4&outputCurrency=ETH',
       },
       {
         label: 'Liquidity',
