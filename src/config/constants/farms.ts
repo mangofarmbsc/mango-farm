@@ -2,22 +2,7 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-  {
-   pid: 11,
-   risk: 3,
-   lpSymbol: 'MANGO Solo LP',
-   lpAddresses: {
-     97: '',
-     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-   },
-   tokenSymbol: 'MANGO',
-   tokenAddresses: {
-     97: '',
-     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-   },
-   quoteTokenSymbol: QuoteToken.MANGO,
-   quoteTokenAdresses: contracts.mango,
- },
+
   {
    pid: 10,
    risk: 2,
@@ -69,6 +54,23 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
 
+  {
+   pid: 11,
+   risk: 3,
+   lpSymbol: 'MANGO Solo LP',
+   lpAddresses: {
+     97: '',
+     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+   },
+   tokenSymbol: 'MANGO',
+   tokenAddresses: {
+     97: '',
+     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+   },
+   quoteTokenSymbol: QuoteToken.MANGO,
+   quoteTokenAdresses: contracts.mango,
+  },
+
    {
     pid: 2,
     risk: 1,
@@ -85,7 +87,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
+    {
    pid: 4,
    risk: 3,
    lpSymbol: 'MANGO-CHS LP',
