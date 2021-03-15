@@ -3,23 +3,6 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
 
-  {
-   pid: 10,
-   risk: 2,
-   lpSymbol: 'MANGO-USDT LP',
-   lpAddresses: {
-     97: '',
-     56: '0x4aB5135A7f7A814a67a3F0638e42F55C7caE2F69',
-   },
-   tokenSymbol: 'MANGO',
-   tokenAddresses: {
-     97: '',
-     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-   },
-   quoteTokenSymbol: QuoteToken.USDT,
-   quoteTokenAdresses: contracts.usdt,
- },
-
     {
     pid: 0,
     risk: 2,
@@ -53,6 +36,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+  
+    {
+     pid: 10,
+     risk: 2,
+     lpSymbol: 'MANGO-USDT LP',
+     lpAddresses: {
+       97: '',
+       56: '0x4aB5135A7f7A814a67a3F0638e42F55C7caE2F69',
+     },
+     tokenSymbol: 'MANGO',
+     tokenAddresses: {
+       97: '',
+       56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+     },
+     quoteTokenSymbol: QuoteToken.USDT,
+     quoteTokenAdresses: contracts.usdt,
+   },
 /* / p
   {
    pid: 11,
