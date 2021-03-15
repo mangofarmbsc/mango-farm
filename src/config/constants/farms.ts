@@ -3,6 +3,22 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
+   pid: 11,
+   risk: 3,
+   lpSymbol: 'MANGO Solo LP',
+   lpAddresses: {
+     97: '',
+     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+   },
+   tokenSymbol: 'MANGO',
+   tokenAddresses: {
+     97: '',
+     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+   },
+   quoteTokenSymbol: QuoteToken.MANGO,
+   quoteTokenAdresses: contracts.mango,
+ },
+  {
    pid: 10,
    risk: 2,
    lpSymbol: 'MANGO-USDT LP',
