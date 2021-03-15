@@ -22,25 +22,25 @@ const useStake = (pid: number) => {
   return { onStake: handleStake }
 }
 
-export const useMangoStake = (mangoId, isUsingBnb = false) => {
+export const useMangoStake = (juiceId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
-  const mangoChefContract = useMangoChef(mangoId)
+  const mangoChefContract = useMangoChef(juiceId)
 
   const handleStake = useCallback(
     async (amount: string) => {
-      if (mangoId === 0) {
+      if (juiceId === 0) {
         await stake(masterChefContract, 0, amount, account)
       } else if (isUsingBnb) {
         await mangoStakeBnb(mangoChefContract, amount, account)
       } else {
         await mangoStake(mangoChefContract, amount, account)
       }
-      dispatch(updateUserStakedBalance(mangoId, account))
-      dispatch(updateUserBalance(mangoId, account))
+      dispatch(updateUserStakedBalance(juiceId, account))
+      dispatch(updateUserBalance(juiceId, account))
     },
-    [account, dispatch, isUsingBnb, masterChefContract, mangoChefContract, mangoId],
+    [account, dispatch, isUsingBnb, masterChefContract, mangoChefContract, juiceId],
   )
 
   return { onStake: handleStake }

@@ -29,30 +29,30 @@ const useUnstake = (pid: number) => {
 
 const JUICEIDS = []
 
-export const useMangoUnstake = (mangoId) => {
+export const useMangoUnstake = (juiceId) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
   const masterChefContract = useMasterchef()
-  const mangoChefContract = useMangoChef(mangoId)
-  const isOldMango = JUICEIDS.includes(mangoId)
+  const mangoChefContract = useMangoChef(juiceId)
+  const isOldJuice = JUICEIDS.includes(juiceId)
 
   const handleUnstake = useCallback(
     async (amount: string) => {
-      if (mangoId === 0) {
+      if (juiceId === 0) {
         const txHash = await unstake(masterChefContract, 0, amount, account)
         console.info(txHash)
-      } else if (isOldMango) {
+      } else if (isOldJuice) {
         const txHash = await mangoEmegencyUnstake(mangoChefContract, amount, account)
         console.info(txHash)
       } else {
         const txHash = await mangoUnstake(mangoChefContract, amount, account)
         console.info(txHash)
       }
-      dispatch(updateUserStakedBalance(mangoId, account))
-      dispatch(updateUserBalance(mangoId, account))
-      dispatch(updateUserPendingReward(mangoId, account))
+      dispatch(updateUserStakedBalance(juiceId, account))
+      dispatch(updateUserBalance(juiceId, account))
+      dispatch(updateUserPendingReward(juiceId, account))
     },
-    [account, dispatch, isOldMango, masterChefContract, mangoChefContract, mangoId],
+    [account, dispatch, isOldJuice, masterChefContract, mangoChefContract, juiceId],
   )
 
   return { onUnstake: handleUnstake }

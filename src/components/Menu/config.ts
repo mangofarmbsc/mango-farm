@@ -25,11 +25,11 @@ const config: MenuEntry[] = [
     icon: 'FarmIcon',
     href: '/farms',
   },
-  // {
-  //   label: 'Mango',
-  //   icon: 'PoolIcon',
-  //   href: '/mango',
-  // },
+   {
+     label: 'Juice',
+     icon: 'PoolIcon',
+     href: '/mango',
+  },
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',

@@ -15,7 +15,7 @@ const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 // BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
 const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.BNB)
 const bnbPools = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.BNB)
-const nonMasterPools = poolsConfig.filter((p) => p.mangoId !== 0)
+const nonMasterPools = poolsConfig.filter((p) => p.juiceId !== 0)
 const web3 = getWeb3()
 const masterChefContract = new web3.eth.Contract((masterChefABI as unknown) as AbiItem, getMasterChefAddress())
 
@@ -28,7 +28,7 @@ export const fetchPoolsAllowance = async (account) => {
 
   const allowances = await multicall(erc20ABI, calls)
   return nonBnbPools.reduce(
-    (acc, pool, index) => ({ ...acc, [pool.mangoId]: new BigNumber(allowances[index]).toJSON() }),
+    (acc, pool, index) => ({ ...acc, [pool.juiceId]: new BigNumber(allowances[index]).toJSON() }),
     {},
   )
 }
@@ -42,14 +42,14 @@ export const fetchUserBalances = async (account) => {
   }))
   const tokenBalancesRaw = await multicall(erc20ABI, calls)
   const tokenBalances = nonBnbPools.reduce(
-    (acc, pool, index) => ({ ...acc, [pool.mangoId]: new BigNumber(tokenBalancesRaw[index]).toJSON() }),
+    (acc, pool, index) => ({ ...acc, [pool.juiceId]: new BigNumber(tokenBalancesRaw[index]).toJSON() }),
     {},
   )
 
   // BNB pools
   const bnbBalance = await web3.eth.getBalance(account)
   const bnbBalances = bnbPools.reduce(
-    (acc, pool) => ({ ...acc, [pool.mangoId]: new BigNumber(bnbBalance).toJSON() }),
+    (acc, pool) => ({ ...acc, [pool.juiceId]: new BigNumber(bnbBalance).toJSON() }),
     {},
   )
 
@@ -66,7 +66,7 @@ export const fetchUserStakeBalances = async (account) => {
   const stakedBalances = nonMasterPools.reduce(
     (acc, pool, index) => ({
       ...acc,
-      [pool.mangoId]: new BigNumber(userInfo[index].amount._hex).toJSON(),
+      [pool.juiceId]: new BigNumber(userInfo[index].amount._hex).toJSON(),
     }),
     {},
   )
@@ -87,7 +87,7 @@ export const fetchUserPendingRewards = async (account) => {
   const pendingRewards = nonMasterPools.reduce(
     (acc, pool, index) => ({
       ...acc,
-      [pool.mangoId]: new BigNumber(res[index]).toJSON(),
+      [pool.juiceId]: new BigNumber(res[index]).toJSON(),
     }),
     {},
   )

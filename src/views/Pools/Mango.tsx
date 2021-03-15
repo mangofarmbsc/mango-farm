@@ -58,7 +58,7 @@ const Farm: React.FC = () => {
 
     return {
       ...pool,
-      isFinished: pool.mangoId === 0 ? false : pool.isFinished || block > pool.endBlock,
+      isFinished: pool.juiceId === 0 ? false : pool.isFinished || block > pool.endBlock,
       apy,
     }
   })
@@ -86,14 +86,14 @@ const Farm: React.FC = () => {
         <Route exact path={`${path}`}>
           <>
             {orderBy(openPools, ['sortOrder']).map((pool) => (
-              <PoolCard key={pool.mangoId} pool={pool} />
+              <PoolCard key={pool.juiceId} pool={pool} />
             ))}
             <Coming />
           </>
         </Route>
         <Route path={`${path}/history`}>
           {orderBy(finishedPools, ['sortOrder']).map((pool) => (
-            <PoolCard key={pool.mangoId} pool={pool} />
+            <PoolCard key={pool.juiceId} pool={pool} />
           ))}
         </Route>
       </FlexLayout>

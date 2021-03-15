@@ -10,7 +10,7 @@ import BigNumber from 'bignumber.js'
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 export const fetchPoolsBlockLimits = async () => {
-  const poolsWithEnd = poolsConfig.filter((p) => p.mangoId !== 0)
+  const poolsWithEnd = poolsConfig.filter((p) => p.juiceId !== 0)
   const callsStartBlock = poolsWithEnd.map((poolConfig) => {
     return {
       address: poolConfig.contractAddress[CHAIN_ID],
@@ -31,7 +31,7 @@ export const fetchPoolsBlockLimits = async () => {
     const startBlock = starts[index]
     const endBlock = ends[index]
     return {
-      mangoId: mangoPoolConfig.mangoId,
+      juiceId: mangoPoolConfig.juiceId,
       startBlock: new BigNumber(startBlock).toJSON(),
       endBlock: new BigNumber(endBlock).toJSON(),
     }
@@ -63,11 +63,11 @@ export const fetchPoolsTotalStatking = async () => {
 
   return [
     ...nonBnbPools.map((p, index) => ({
-      mangoId: p.mangoId,
+      juiceId: p.juiceId,
       totalStaked: new BigNumber(nonBnbPoolsTotalStaked[index]).toJSON(),
     })),
     ...bnbPool.map((p, index) => ({
-      mangoId: p.mangoId,
+      juiceId: p.juiceId,
       totalStaked: new BigNumber(bnbPoolsTotalStaked[index]).toJSON(),
     })),
   ]

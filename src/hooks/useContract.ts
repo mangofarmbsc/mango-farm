@@ -70,7 +70,7 @@ export const useMasterchef = () => {
 }
 
 export const useMangoChef = (id) => {
-  const config = poolsConfig.find((pool) => pool.mangoId === id)
+  const config = poolsConfig.find((pool) => pool.juiceId === id)
   const rawAbi = config.poolCategory === PoolCategory.BINANCE ? mangoChefBnb : mangoChef
   const abi = (rawAbi as unknown) as AbiItem
   return useContract(abi, config.contractAddress[process.env.REACT_APP_CHAIN_ID])

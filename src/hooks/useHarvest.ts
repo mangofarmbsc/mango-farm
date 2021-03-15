@@ -34,23 +34,23 @@ export const useAllHarvest = (farmPids: number[]) => {
   return { onReward: handleHarvest }
 }
 
-export const useMangoHarvest = (mangoId, isUsingBnb = false) => {
+export const useMangoHarvest = (juiceId, isUsingBnb = false) => {
   const dispatch = useDispatch()
   const { account } = useWallet()
-  const mangoChefContract = useMangoChef(mangoId)
+  const mangoChefContract = useMangoChef(juiceId)
   const masterChefContract = useMasterchef()
 
   const handleHarvest = useCallback(async () => {
-    if (mangoId === 0) {
+    if (juiceId === 0) {
       await harvest(masterChefContract, 0, account)
     } else if (isUsingBnb) {
       await mangohHarvestBnb(mangoChefContract, account)
     } else {
       await mangohHarvest(mangoChefContract, account)
     }
-    dispatch(updateUserPendingReward(mangoId, account))
-    dispatch(updateUserBalance(mangoId, account))
-  }, [account, dispatch, isUsingBnb, masterChefContract, mangoChefContract, mangoId])
+    dispatch(updateUserPendingReward(juiceId, account))
+    dispatch(updateUserBalance(juiceId, account))
+  }, [account, dispatch, isUsingBnb, masterChefContract, mangoChefContract, juiceId])
 
   return { onReward: handleHarvest }
 }

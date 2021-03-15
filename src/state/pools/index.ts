@@ -19,20 +19,20 @@ export const PoolsSlice = createSlice({
     setPoolsPublicData: (state, action) => {
       const livePoolsData: Pool[] = action.payload
       state.data = state.data.map((pool) => {
-        const livePoolData = livePoolsData.find((entry) => entry.mangoId === pool.mangoId)
+        const livePoolData = livePoolsData.find((entry) => entry.juiceId === pool.juiceId)
         return { ...pool, ...livePoolData }
       })
     },
     setPoolsUserData: (state, action) => {
       const userData = action.payload
       state.data = state.data.map((pool) => {
-        const userPoolData = userData.find((entry) => entry.mangoId === pool.mangoId)
+        const userPoolData = userData.find((entry) => entry.juiceId === pool.juiceId)
         return { ...pool, userData: userPoolData }
       })
     },
     updatePoolsUserData: (state, action) => {
-      const { field, value, mangoId } = action.payload
-      const index = state.data.findIndex((p) => p.mangoId === mangoId)
+      const { field, value, juiceId } = action.payload
+      const index = state.data.findIndex((p) => p.juiceId === juiceId)
       state.data[index] = { ...state.data[index], userData: { ...state.data[index].userData, [field]: value } }
     },
   },
@@ -47,8 +47,8 @@ export const fetchPoolsPublicDataAsync = () => async (dispatch) => {
   const totalStakings = await fetchPoolsTotalStatking()
 
   const liveData = poolsConfig.map((pool) => {
-    const blockLimit = blockLimits.find((entry) => entry.mangoId === pool.mangoId)
-    const totalStaking = totalStakings.find((entry) => entry.mangoId === pool.mangoId)
+    const blockLimit = blockLimits.find((entry) => entry.juiceId === pool.juiceId)
+    const totalStaking = totalStakings.find((entry) => entry.juiceId === pool.juiceId)
     return {
       ...blockLimit,
       ...totalStaking,
@@ -65,34 +65,34 @@ export const fetchPoolsUserDataAsync = (account) => async (dispatch) => {
   const pendingRewards = await fetchUserPendingRewards(account)
 
   const userData = poolsConfig.map((pool) => ({
-    mangoId: pool.mangoId,
-    allowance: allowances[pool.mangoId],
-    stakingTokenBalance: stakingTokenBalances[pool.mangoId],
-    stakedBalance: stakedBalances[pool.mangoId],
-    pendingReward: pendingRewards[pool.mangoId],
+    juiceId: pool.juiceId,
+    allowance: allowances[pool.juiceId],
+    stakingTokenBalance: stakingTokenBalances[pool.juiceId],
+    stakedBalance: stakedBalances[pool.juiceId],
+    pendingReward: pendingRewards[pool.juiceId],
   }))
 
   dispatch(setPoolsUserData(userData))
 }
 
-export const updateUserAllowance = (mangoId: string, account: string) => async (dispatch) => {
+export const updateUserAllowance = (juiceId: string, account: string) => async (dispatch) => {
   const allowances = await fetchPoolsAllowance(account)
-  dispatch(updatePoolsUserData({ mangoId, field: 'allowance', value: allowances[mangoId] }))
+  dispatch(updatePoolsUserData({ juiceId, field: 'allowance', value: allowances[juiceId] }))
 }
 
-export const updateUserBalance = (mangoId: string, account: string) => async (dispatch) => {
+export const updateUserBalance = (juiceId: string, account: string) => async (dispatch) => {
   const tokenBalances = await fetchUserBalances(account)
-  dispatch(updatePoolsUserData({ mangoId, field: 'stakingTokenBalance', value: tokenBalances[mangoId] }))
+  dispatch(updatePoolsUserData({ juiceId, field: 'stakingTokenBalance', value: tokenBalances[juiceId] }))
 }
 
-export const updateUserStakedBalance = (mangoId: string, account: string) => async (dispatch) => {
+export const updateUserStakedBalance = (juiceId: string, account: string) => async (dispatch) => {
   const stakedBalances = await fetchUserStakeBalances(account)
-  dispatch(updatePoolsUserData({ mangoId, field: 'stakedBalance', value: stakedBalances[mangoId] }))
+  dispatch(updatePoolsUserData({ juiceId, field: 'stakedBalance', value: stakedBalances[juiceId] }))
 }
 
-export const updateUserPendingReward = (mangoId: string, account: string) => async (dispatch) => {
+export const updateUserPendingReward = (juiceId: string, account: string) => async (dispatch) => {
   const pendingRewards = await fetchUserPendingRewards(account)
-  dispatch(updatePoolsUserData({ mangoId, field: 'pendingReward', value: pendingRewards[mangoId] }))
+  dispatch(updatePoolsUserData({ juiceId, field: 'pendingReward', value: pendingRewards[juiceId] }))
 }
 
 export default PoolsSlice.reducer
