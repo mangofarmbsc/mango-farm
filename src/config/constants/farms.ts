@@ -53,24 +53,23 @@ const farms: FarmConfig[] = [
      quoteTokenSymbol: QuoteToken.USDT,
      quoteTokenAdresses: contracts.usdt,
    },
-/* / p
-  {
-   pid: 11,
-   risk: 5,
-   lpSymbol: 'MANGO SOLO',
-   lpAddresses: {
-     97: '',
-     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-   },
-   tokenSymbol: 'MANGO',
-   tokenAddresses: {
-     97: '',
-     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-   },
-   quoteTokenSymbol: QuoteToken.MANGO,
-   quoteTokenAdresses: contracts.mango,
-  },
-// */
+
+       {
+        pid: 13,
+        risk: 2,
+        lpSymbol: '1INCH-BUSD LP',
+        lpAddresses: {
+          97: '',
+          56: '0x5a1253807e43948b5cD2382673703c917BbC7B60',
+        },
+        tokenSymbol: '1INCH',
+        tokenAddresses: {
+          97: '',
+          56: '0x111111111117dC0aa78b770fA6A738034120C302',
+        },
+        quoteTokenSymbol: QuoteToken.BUSD,
+        quoteTokenAdresses: contracts.busd,
+      },
 {
   pid: 11,
   risk: 5,
