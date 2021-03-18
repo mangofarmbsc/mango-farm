@@ -36,7 +36,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  
+
     {
      pid: 10,
      risk: 2,
@@ -120,7 +120,6 @@ const farms: FarmConfig[] = [
    quoteTokenSymbol: QuoteToken.CHS,
    quoteTokenAdresses: contracts.chs,
  },
-
  {
   pid: 5,
   risk: 3,
@@ -136,6 +135,41 @@ const farms: FarmConfig[] = [
   },
   quoteTokenSymbol: QuoteToken.PIZZA,
   quoteTokenAdresses: contracts.pizza,
+ },
+
+ {
+  pid: 12,
+  risk: 3,
+  lpSymbol: 'KP3RB-BNB LP',
+  lpAddresses: {
+    97: '',
+    56: '0x2113bA4000d8a0B201C3e916E63Fe0DCDfBe476a',
+  },
+  tokenSymbol: 'KP3RB',
+  tokenAddresses: {
+    97: '',
+    56: '0x5EA29eEe799aA7cC379FdE5cf370BC24f2Ea7c81',
+  },
+  quoteTokenSymbol: QuoteToken.BNB,
+  quoteTokenAdresses: contracts.wbnb,
+ },
+
+
+ {
+  pid: 13,
+  risk: 3,
+  lpSymbol: 'KIWI-BNB LP',
+  lpAddresses: {
+    97: '',
+    56: '0xDf8481f4ffb688d940f59F839c2613cc6C40a79E',
+  },
+  tokenSymbol: 'KIWI',
+  tokenAddresses: {
+    97: '',
+    56: '0xCfDf8A80fECAeeCC144fa74c0Df8691BFd0e26e3',
+  },
+  quoteTokenSymbol: QuoteToken.BNB,
+  quoteTokenAdresses: contracts.wbnb,
 },
 
 {
