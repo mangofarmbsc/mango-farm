@@ -32,6 +32,18 @@ export default {
     97: '',
     56: '0x55d398326f99059ff775485246999027b3197955',
   },
+  kp3rb: {
+    97: '',
+    56: '0x5EA29eEe799aA7cC379FdE5cf370BC24f2Ea7c81',
+  },
+  "1inch": {
+    97: '',
+    56: '0x111111111117dC0aa78b770fA6A738034120C302',
+  },
+  kiwi: {
+    97: '',
+    56: '0xCfDf8A80fECAeeCC144fa74c0Df8691BFd0e26e3',
+  },
   usdc: {
     97: '',
     56: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
