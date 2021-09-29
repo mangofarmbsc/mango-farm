@@ -68,9 +68,12 @@ const Home: React.FC = () => {
         <Cards>
           <FarmStakingCard />
           <TwitterCard />
-          <MangoStats />
-          <TotalValueLockedCard />
+
+{/*          <TotalValueLockedCard /> */}
         </Cards>
+        <div>
+        <MangoStats />
+        </div>
       </div>
     </Page>
   )

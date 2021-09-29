@@ -96,7 +96,11 @@ export const useTotalValue = (): BigNumber => {
         val = bnbPrice.times(farm.lpTotalInQuoteToken)
       } else if (farm.quoteTokenSymbol === QuoteToken.MANGO) {
         val = mangoPrice.times(farm.lpTotalInQuoteToken)
-      } else {
+      }else if (farm.quoteTokenSymbol === QuoteToken.KITTY) {
+        val = bnbPrice.times(farm.lpTotalInQuoteToken)
+      }else if (farm.quoteTokenSymbol === QuoteToken.PUP) {
+        val = bnbPrice.times(farm.lpTotalInQuoteToken)
+      }else{
         val = farm.lpTotalInQuoteToken
       }
       value = value.plus(val)

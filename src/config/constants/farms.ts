@@ -37,6 +37,39 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
 
+     {
+      pid: 18,
+      risk: 2,
+      lpSymbol: 'KITTY-MANGO LP',
+      lpAddresses: {
+        97: '',
+        56: '0xc4b3561619d37Bf1c44e303e480F14f7b9A34C4e',
+      },
+      tokenSymbol: 'MANGO',
+      tokenAddresses: {
+        97: '',
+        56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+      },
+      quoteTokenSymbol: QuoteToken.KITTY,
+      quoteTokenAdresses: contracts.kitty,
+    },
+     {
+          pid: 21,
+          risk: 2,
+          lpSymbol: 'PUP-MANGO LP',
+          lpAddresses: {
+            97: '',
+            56: '0x8E1D5fD5c3c390877615366398bF8B1C85dE8ACd',
+          },
+          tokenSymbol: 'MANGO',
+          tokenAddresses: {
+            97: '',
+            56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+          },
+          quoteTokenSymbol: QuoteToken.PUP,
+          quoteTokenAdresses: contracts.pup,
+        },
+
     {
      pid: 10,
      risk: 2,
@@ -85,55 +118,7 @@ const farms: FarmConfig[] = [
   quoteTokenSymbol: QuoteToken.PIZZA,
   quoteTokenAdresses: contracts.pizza,
  },
-  {
-  pid: 12,
-  risk: 3,
-//  isTokenOnly: false,
-  lpSymbol: 'KP3RB-BNB LP',
-  lpAddresses: {
-    97: '',
-    56: '0x2113bA4000d8a0B201C3e916E63Fe0DCDfBe476a',
-  },
-  tokenSymbol: 'KP3RB',
-  tokenAddresses: {
-    97: '',
-    56: '0x5EA29eEe799aA7cC379FdE5cf370BC24f2Ea7c81',
-  },
-  quoteTokenSymbol: QuoteToken.BNB,
-  quoteTokenAdresses: contracts.wbnb,
- },
- {
-  pid: 13,
-  risk: 3,
-  lpSymbol: 'KIWI-BNB LP',
-  lpAddresses: {
-    97: '',
-    56: '0xDf8481f4ffb688d940f59F839c2613cc6C40a79E',
-  },
-  tokenSymbol: 'KIWI',
-  tokenAddresses: {
-    97: '',
-    56: '0xCfDf8A80fECAeeCC144fa74c0Df8691BFd0e26e3',
-  },
-  quoteTokenSymbol: QuoteToken.BNB,
-  quoteTokenAdresses: contracts.wbnb,
-},
-{
-   pid: 14,
-   risk: 3,
-   lpSymbol: '1INCH-BUSD LP',
-   lpAddresses: {
-      97: '',
-      56: '0x5a1253807e43948b5cD2382673703c917BbC7B60',
-       },
-   tokenSymbol: '1INCH',
-   tokenAddresses: {
-      97: '',
-      56: '0x111111111117dC0aa78b770fA6A738034120C302',
-      },
-   quoteTokenSymbol: QuoteToken.BUSD,
-   quoteTokenAdresses: contracts.busd,
-},
+
  {
  pid: 2,
  risk: 1,
@@ -183,38 +168,6 @@ const farms: FarmConfig[] = [
  quoteTokenAdresses: contracts.wbnb,
 },
 {
- pid: 8,
- risk: 3,
- lpSymbol: 'PIZZA-BNB LP',
- lpAddresses: {
-   97: '',
-   56: '0x8405be915af56589756a275d4894fa9f0ff6ca0f',
- },
- tokenSymbol: 'PIZZA',
- tokenAddresses: {
-   97: '',
-   56: '0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB',
- },
- quoteTokenSymbol: QuoteToken.BNB,
- quoteTokenAdresses: contracts.wbnb,
-},
-{
- pid: 9,
- risk: 3,
- lpSymbol: 'CHS-BNB LP',
- lpAddresses: {
-   97: '',
-   56: '0x51A162dd678d75C269Ef6680193C019e0B4Bda7E',
- },
- tokenSymbol: 'CHS',
- tokenAddresses: {
-   97: '',
-   56: '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464',
- },
- quoteTokenSymbol: QuoteToken.BNB,
- quoteTokenAdresses: contracts.wbnb,
-},
-{
   pid: 11,
   risk: 5,
   isTokenOnly: true,
@@ -222,6 +175,40 @@ const farms: FarmConfig[] = [
   lpAddresses: {
     97: '',
     56: '0xE5fE53149A278aF40ACb04334c4140eE7444BE4B', // EGG-BUSD LP
+  },
+  tokenSymbol: 'MANGO',
+  tokenAddresses: {
+    97: '',
+    56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 20,
+  risk: 5,
+  isTokenOnly: true,
+  lpSymbol: 'KITTY',
+  lpAddresses: {
+    97: '',
+    56: '0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346', // EGG-BUSD LP
+  },
+  tokenSymbol: 'MANGO',
+  tokenAddresses: {
+    97: '',
+    56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 22,
+  risk: 5,
+  isTokenOnly: true,
+  lpSymbol: 'PUP',
+  lpAddresses: {
+    97: '',
+    56: '0x74E39070a40ce9eD64dC60CE51127b9394711EE2', // EGG-BUSD LP
   },
   tokenSymbol: 'MANGO',
   tokenAddresses: {

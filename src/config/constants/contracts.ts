@@ -52,4 +52,12 @@ export default {
     97: '',
     56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
   },
+  kitty: {
+    97: '',
+    56: '0x5b4963b964bac5c2db83e53fffe46e0cb83a1346',
+  },
+  pup: {
+    97: '',
+    56: '0x74E39070a40ce9eD64dC60CE51127b9394711EE2',
+  },
 }

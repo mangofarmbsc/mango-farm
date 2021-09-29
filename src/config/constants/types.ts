@@ -32,6 +32,8 @@ export interface Ifo {
   'USDC' = 'USDC',
   'CAKE' = 'CAKE',
   'JUICE' = 'JUICE',
+  'KITTY' = 'KITTY',
+  'PUP' = 'PUP', 
 }
 
 

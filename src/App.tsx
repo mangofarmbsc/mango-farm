@@ -1,5 +1,5 @@
-import React, { useEffect, Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import React, { Suspense, useEffect, lazy } from 'react'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { ResetCSS } from '@mangofarm/uikit'
 import BigNumber from 'bignumber.js'
@@ -8,16 +8,13 @@ import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
 import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
+import Pools from './views/Pools'
+import Home from './views/Home'
+import Farms from './views/Farms'
 
-// Route-based code splitting
-// Only pool is included in the main bundle because of it's the most visited page'
-const Home = lazy(() => import('./views/Home'))
-const Farms = lazy(() => import('./views/Farms'))
-// const Lottery = lazy(() => import('./views/Lottery'))
-// const Pools = lazy(() => import('./views/Pools'))
-// const Ifos = lazy(() => import('./views/Ifos'))
+
 const NotFound = lazy(() => import('./views/NotFound'))
-// const Nft = lazy(() => import('./views/Nft'))
+
 
 // This config is required for number formating
 BigNumber.config({
@@ -36,47 +33,29 @@ const App: React.FC = () => {
   useFetchPublicData()
 
   return (
-    <Router>
-      <ResetCSS />
-      <GlobalStyle />
-      <Menu>
-        <Suspense fallback={<PageLoader />}>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
+    <Suspense fallback={null}>
+   <HashRouter>
+
+    <ResetCSS />
+    <GlobalStyle />
+    <Menu>
+      <Suspense fallback={<PageLoader />}>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
             <Route path="/farms">
               <Farms />
             </Route>
             <Route path="/mango">
               <Farms tokenMode />
             </Route>
-            {/* <Route path="/pools"> */}
-            {/*  <Pools /> */}
-            {/* </Route> */}
-            {/* <Route path="/lottery"> */}
-            {/*  <Lottery /> */}
-            {/* </Route> */}
-            {/* <Route path="/ifo"> */}
-            {/*  <Ifos /> */}
-            {/* </Route> */}
-            {/* <Route path="/nft"> */}
-            {/*  <Nft /> */}
-            {/* </Route> */}
-            {/* Redirect */}
-            {/* <Route path="/staking"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* <Route path="/juice"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* 404 */}
             <Route component={NotFound} />
-          </Switch>
-        </Suspense>
-      </Menu>
-      <NftGlobalNotification />
-    </Router>
+            </Switch>
+           </Suspense>
+         </Menu>
+      </HashRouter>
+       </Suspense>
   )
 }
 
