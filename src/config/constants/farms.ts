@@ -50,8 +50,8 @@ const farms: FarmConfig[] = [
         97: '',
         56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
       },
-      quoteTokenSymbol: QuoteToken.KITTY,
-      quoteTokenAdresses: contracts.kitty,
+      quoteTokenSymbol: QuoteToken.MANGO,
+      quoteTokenAdresses: contracts.mango,
     },
      {
           pid: 21,
@@ -66,8 +66,8 @@ const farms: FarmConfig[] = [
             97: '',
             56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
           },
-          quoteTokenSymbol: QuoteToken.PUP,
-          quoteTokenAdresses: contracts.pup,
+          quoteTokenSymbol: QuoteToken.MANGO,
+          quoteTokenAdresses: contracts.mango,
         },
 
     {
@@ -193,24 +193,7 @@ const farms: FarmConfig[] = [
     97: '',
     56: '0x5b4963B964bAc5C2Db83e53ffFe46E0cb83a1346', // EGG-BUSD LP
   },
-  tokenSymbol: 'MANGO',
-  tokenAddresses: {
-    97: '',
-    56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',
-  },
-  quoteTokenSymbol: QuoteToken.BUSD,
-  quoteTokenAdresses: contracts.busd,
-},
-{
-  pid: 22,
-  risk: 5,
-  isTokenOnly: true,
-  lpSymbol: 'PUP',
-  lpAddresses: {
-    97: '',
-    56: '0x74E39070a40ce9eD64dC60CE51127b9394711EE2', // EGG-BUSD LP
-  },
-  tokenSymbol: 'MANGO',
+  tokenSymbol: 'KITTY',
   tokenAddresses: {
     97: '',
     56: '0x3D29cdB00CB183a0aEcEEa4fB73F55E1450af3d4',

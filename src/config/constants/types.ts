@@ -33,7 +33,7 @@ export interface Ifo {
   'CAKE' = 'CAKE',
   'JUICE' = 'JUICE',
   'KITTY' = 'KITTY',
-  'PUP' = 'PUP', 
+  'PUP' = 'PUP'
 }
 
 
